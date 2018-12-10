@@ -1,7 +1,6 @@
 # rede_social
 uma breve introdução a uma rede social em um aplicativo.
-
-//**.                       
+                     
 
 -- Usei o Shared Preferences para criar um tipo de sessão
 SharedPreferences sharedPreferences =  getApplicationContext().getSharedPreferences("NOME-SESSÃO", Context.MODE_PRIVATE);
@@ -24,4 +23,3 @@ editor.apply();
     
     https://play.google.com/store/apps/details?id=com.s2start.matheus.fiveconn
 
-**//
