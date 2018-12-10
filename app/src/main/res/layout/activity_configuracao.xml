@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.ConfiguracaoActivity">
+
+    <ImageView
+        android:id="@+id/backgrount_perfil"
+        android:layout_width="match_parent"
+        android:layout_height="400px"
+        android:background="#333"
+        />
+    <ImageView
+        android:id="@+id/fotoperfil"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="80px"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:src="@drawable/pdefault" />
+    <TextView
+        android:id="@+id/nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="nomeusuario"
+        android:textColor="#fff"
+        android:textSize="100px"
+        android:layout_toEndOf="@id/fotoperfil"
+        android:layout_toRightOf="@id/fotoperfil"
+        android:layout_marginTop="80px" />
+    <TextView
+        android:id="@+id/tipo"
+        android:layout_below="@+id/nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textSize="20px"
+        android:layout_toEndOf="@id/fotoperfil"
+        android:layout_toRightOf="@id/fotoperfil" />
+    <TextView
+        android:id="@+id/seguidores"
+        android:layout_below="@+id/tipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 Seguidores"
+        android:textColor="#fff"
+        android:textSize="50px"
+        android:layout_toEndOf="@id/fotoperfil"
+        android:layout_toRightOf="@id/fotoperfil" />
+    <TextView
+        android:id="@+id/seguindo"
+        android:layout_below="@+id/tipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 Seguindo"
+        android:textColor="#fff"
+        android:textSize="50px"
+        android:layout_marginLeft="10px"
+        android:layout_toEndOf="@id/seguidores"
+        android:layout_toRightOf="@id/seguidores" />
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_below="@id/backgrount_perfil"
+        android:layout_above="@id/menu"
+        >
+
+        <EditText
+            android:id="@+id/nomeeditar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="nome"
+            />
+        <EditText
+            android:layout_below="@+id/nomeeditar"
+            android:id="@+id/sobrenomeeditar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="sobrenome"
+            />
+        <EditText
+            android:layout_below="@+id/sobrenomeeditar"
+            android:id="@+id/emaileditar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            />
+        <Button
+            android:id="@+id/editar"
+            android:layout_marginTop="20px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="editar"
+            android:textColor="#fff"
+            android:background="@color/colorPrimary"
+            android:layout_below="@+id/emaileditar"
+            >
+        </Button>
+
+
+        <Button
+            android:id="@+id/sair"
+            android:layout_marginTop="20px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sair"
+            android:textColor="#fff"
+            android:background="@color/colorPrimary"
+           android:layout_alignParentBottom="true"
+            >
+        </Button>
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_height="140px"
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        >
+        <ImageButton
+            android:id="@+id/gotimeline"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFF"
+            android:layout_weight="1"
+            android:src="@drawable/home"
+            />
+        <ImageButton
+            android:id="@+id/criarpost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFF"
+            android:layout_weight="1"
+            android:src="@drawable/create"
+            />
+        <ImageButton
+            android:id="@+id/perfil"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFF"
+            android:layout_weight="1"
+            android:src="@drawable/perfil"
+
+            />
+        <ImageButton
+            android:id="@+id/configuracao"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_weight="1"
+            android:src="@drawable/config"
+            />
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

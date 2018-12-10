@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.NewPostActivity">
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:orientation="vertical"
+        >
+
+        <EditText
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:hint="Titulo"
+            />
+        <EditText
+            android:hint="O QUE ESTÁ PENSANDO HOJE ?"
+            android:id="@+id/descricao"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:layout_weight="4"
+            android:id="@+id/compartilhar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="COMPARTILHAR"
+            android:textColor="#fff"
+            android:background="@color/colorPrimary"
+            android:layout_below="@id/layout_senha"
+            >
+        </Button>
+        <LinearLayout
+            android:id="@+id/menu"
+            android:layout_height="140px"
+            android:layout_width="match_parent"
+            android:background="#fff"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            >
+            <ImageButton
+                android:id="@+id/gotimeline"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFF"
+                android:layout_weight="1"
+                android:src="@drawable/home"
+                />
+            <ImageButton
+                android:id="@+id/criarpost"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFF"
+                android:layout_weight="1"
+                android:src="@drawable/create"
+                />
+            <ImageButton
+                android:id="@+id/perfil"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFF"
+                android:layout_weight="1"
+                android:src="@drawable/perfil"
+
+                />
+            <ImageButton
+                android:id="@+id/configuracao"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary"
+                android:layout_weight="1"
+                android:src="@drawable/config"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

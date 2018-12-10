@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.DetalhePostActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/topo"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        >
+
+
+        <ImageView
+            android:layout_margin="20px"
+            android:layout_height="200px"
+            android:layout_width="200px"
+            android:src="@drawable/pdefault"
+            android:id="@+id/Imgperfil"
+            />
+        <TextView
+            android:id="@+id/nomecompleto"
+            android:layout_marginTop="50px"
+            android:layout_toRightOf="@id/Imgperfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome Usuario"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/horario"
+            android:layout_toRightOf="@id/Imgperfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00/00/0000"
+            android:textSize="30px"
+            android:layout_below="@id/nomecompleto"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginLeft="20px"
+        android:id="@+id/titulo"
+        android:layout_below="@id/topo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="50px"
+        android:text="Titulo"
+        />
+    <TextView
+        android:layout_marginLeft="20px"
+        android:id="@+id/descricao"
+        android:layout_below="@id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30px"
+        android:text="Titulo"
+        />
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_height="140px"
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        >
+        <ImageButton
+            android:id="@+id/gotimeline"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFF"
+            android:layout_weight="1"
+            android:src="@drawable/home"
+            />
+        <ImageButton
+            android:id="@+id/criarpost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFF"
+            android:layout_weight="1"
+            android:src="@drawable/create"
+            />
+        <ImageButton
+            android:id="@+id/perfil"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFF"
+            android:layout_weight="1"
+            android:src="@drawable/perfil"
+
+            />
+        <ImageButton
+            android:id="@+id/configuracao"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_weight="1"
+            android:src="@drawable/config"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
